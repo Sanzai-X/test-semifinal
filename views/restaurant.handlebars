@@ -1,0 +1,29 @@
+<div class="viewprofile">
+    <img src="{{ppic}}" id="viewrestopic">
+    <div class="profiledetails">
+        <p>{{v_restos}}</p>
+        <p>Reviews: <span class="bold">{{numReviews}}</span></p>
+    </div>
+
+    <div class="profilemedia">
+        <p id="vpTheReviews">TheReviews</p>
+        <p id="vpAbout">About</p>
+    </div>
+</div>
+<div class="profilecontent" style="height: {{dynamicHeight}}px">
+{{#if blogs.length}}
+    {{#each blogs}}
+        <div class="vpblog">
+            <section>
+                <a href="/profile/{{this.user._id}}"><img src="{{this.user.userphoto}}" class="blogpfp"></a>
+                <p><span class="greyusername"> @{{this.user.username}}</span></p>
+            </section>
+            <h3 class="title">{{this.title}}</h3>
+            <p class="snippet">{{this.content}}</p>
+        </div>
+    {{/each}}
+{{else}}
+    <p>There are no blogs to display</p>
+{{/if}}
+</div>
+</div>

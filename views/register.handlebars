@@ -1,0 +1,48 @@
+<div class="loginbody">
+<div class="homerow">
+    <p><a href="#">Home</a></p>
+    <p><a href="#">About</a></p>
+    <p><a href="#">TheReviews</a></p>
+    <p><a href="#">FAQs</a></p>
+</div>
+    <div class = "login-content">
+        <form action="/register" method="post" id="login-form">
+
+                <p id="login">register</p>
+
+                {{> messages}}
+
+                <div class="user_input">
+                    <label for="username">Username</label>
+                    <input class = "inputuser" type="text" placeholder="Username (User123)" id="username" name="username" value="{{#if username}}{{username}}{{/if}}">
+                </div>
+
+                <div class="user_input">
+                    <label for="name">Full Name</label>
+                    <input class = "inputname" type="text" placeholder="Full Name (Juan C. Dela Cruz)" id="name" name="name" style="width:200px;" value="{{#if name}}{{name}}{{/if}}" >
+                </div>
+
+                <div class="pass_input">
+                    <label for="password">Password</label>
+                    <input class = "inputpass" type="password" placeholder="Password" id="password" name="password" value="{{#if password}}{{password}}{{/if}}">
+                </div>
+
+                <div class="pass_input">
+                    <label for="password">Re-enter Password</label>
+                    <input class = "inputpass" type="password" placeholder="Confirm Password" id="confirmPass" name="confirmPass" >
+                </div>
+
+                <div class="user_input">
+                    <label for="description">Enter you description (Optional)</label>
+                    <input class = "inputname" type="text" placeholder="Short Description (Optional)" id="description" name="description">
+                </div>
+
+                <button type = "submit" id="hiddendiv">Register</button>
+
+                <div>
+                    <p>Already registered? <a href="/login">Login</a></p>
+                </div>
+        </form> 
+    </div>
+</div>
+

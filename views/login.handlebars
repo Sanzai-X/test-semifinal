@@ -1,0 +1,30 @@
+<div class="loginbody">
+<div class="homerow">
+    <p><a href="#">Home</a></p>
+    <p><a href="#">About</a></p>
+    <p><a href="#">TheReviews</a></p>
+    <p><a href="#">FAQs</a></p>
+</div>
+    <div class = "login-content">     
+
+        <form action="/login" method="post" id="login-form">
+
+            <p id="login">login</p>
+
+            {{> messages}}
+
+            <div class="user_input">
+            <input class = "inputuser" type="text" placeholder="Username" name="username" value="{{#if username}}{{username}}{{/if}}">
+            </div>
+
+            <div class="pass_input">
+            <input class = "inputpass" type="password" placeholder="Password" name="password" value="{{#if password}}{{password}}{{/if}}">
+            </div>
+
+            <button type = "submit" id="hiddendiv">Login</button>
+            <p> No account? </p> 
+            <a href="/register" id = "register"> register</a></p>
+        </form> 
+    </div>
+</div>
+

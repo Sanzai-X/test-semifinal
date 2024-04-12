@@ -1,0 +1,56 @@
+<div class="homerow">
+    <p><a href="#">Home</a></p>
+    <p><a href="#">About</a></p>
+    <p><a href="#">TheReviews</a></p>
+    <p><a href="#">FAQs</a></p>
+</div>
+
+<div class="home">
+    <h1> <span id="the">The</span>Review<span id="center">Center</span></h1>
+    <div class="custom_input">
+        <svg xmlns="http://www.w3.org/2000/svg" class="svg_icon bi-search" viewBox="0 0 16 16"><path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"></path></svg>
+        <input class="input" type="text" placeholder="Search">
+    </div>
+</div>
+
+<div class="trending">
+    {{#each restaurants}}
+        <div class = "restoSlides fade">
+
+            <div class="desc-container">
+                <p id="restau-name"><a href="/viewRestaurant/{{this._id}}/{{#if ../loggedIn}}logged/{{../user_id}}{{/if}}">{{this.name}}</a></p>
+                <p id="restau-desc">{{this.description}}</p>
+            </div>
+
+            <div class = "picSize"">
+            <a href="/viewRestaurant/{{this._id}}"><img src = {{this.images.[0]}} class = "resto_img"/></a>
+            </div>
+        </div>
+    {{/each}}
+    <a class = "prev" onclick="changeSlides(-1)">&#10094</a>
+    <a class = "next" onclick="changeSlides(1)">&#10095</a>
+</div>
+<script>
+    let slideIndex = 0;
+    changeSlides(slideIndex);
+
+    // Next/previous controls
+    function changeSlides(n) {
+        showSlides(slideIndex += n);
+    }
+    // Thumbnail image controls
+    function showSlides(n) {
+        let i;
+        let slides = document.getElementsByClassName("restoSlides");
+        if (n > slides.length) {slideIndex = 1}
+        if (n < 1) {slideIndex = slides.length}
+        for (i = 0; i < slides.length; i++) {
+            slides[i].style.display = "none";
+        }
+        slides[slideIndex-1].style.display = "flex";
+    }
+
+    {{#for }}
+        
+    {{/for}}
+</script>

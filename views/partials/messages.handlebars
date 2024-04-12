@@ -1,0 +1,19 @@
+{{#if errors}}
+    {{#each errors}}
+        {{this.msg}}
+    {{/each}}
+{{/if}}
+
+{{#if error_msg}}
+   {{#each error_msg}}
+        {{this.msg}}
+    {{/each}}
+{{/if}}
+
+{{#if success_msg}}
+<div>
+    <div>
+        <h6 style="color:white, background-color:green;"><strong>{{success_msg}}</strong></h6>
+    </div>
+</div>
+{{/if}}

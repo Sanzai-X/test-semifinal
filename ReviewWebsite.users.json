@@ -1,0 +1,48 @@
+[{
+  "_id": {
+    "$oid": "65e833132c64c3efcb86beef"
+  },
+  "username": "AdiMangoPie",
+  "password": "assfart69",
+  "name": "Bryce Andrei Miranda",
+  "description": "Ultimate Gaming Warlord",
+  "userphoto": "\\images\\Adipfp.png",
+  "isOwner": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e83377287d63e7f98c8cbe"
+  },
+  "username": "PainkillerX99",
+  "password": "wetod",
+  "name": "Pablo Lucas III",
+  "description": "Yes, my name is Pablo. No, I'm not Mexican; Thanks for asking",
+  "userphoto": "\\images\\pablopfp.jpg",
+  "isOwner": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e833ffc7b2c99b7605f6ee"
+  },
+  "username": "ReythemGespenst",
+  "password": "squishyneko#1",
+  "name": "Ron William M. Cajumban",
+  "description": "Pro Duelist",
+  "userphoto": "\\images\\ronpfp.jpg",
+  "isOwner": false,
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65e834ab580830ee9b516c57"
+  },
+  "username": "King Arthur",
+  "password": "arthur",
+  "name": "Arturo Caronongan",
+  "description": "Speedrunner extraordinaire. Love Live is cool!!!",
+  "userphoto": "\\images\\anon-pic.jpg",
+  "isOwner": true,
+  "__v": 0
+}]

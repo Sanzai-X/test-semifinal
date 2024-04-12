@@ -1,0 +1,182 @@
+[{
+  "_id": {
+    "$oid": "65ecb20e9482f3c1051a45f1"
+  },
+  "name": "Bok Chicken",
+  "images": [
+    "\\images\\bok-chicken.jpg"
+  ],
+  "location": "Taft Avenue, Manila",
+  "owner": {
+    "$oid": "65e834ab580830ee9b516c57"
+  },
+  "rating": 4.3,
+  "description": "Through our customers that we fondly call our BOKada, we are reminded to make decisions towards their wants and needs. This means only serving quality food with generous servings and providing great customer service, with a goal of ensuring that our BOKada is left with an enjoyable and fulfilled experience.",
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "65ec82d10ba1fd44a6f24956"
+      },
+      "user": {
+        "$oid": "65e833132c64c3efcb86beef"
+      },
+      "title": "First Impression",
+      "content": "Bok chicken has many flavors. However, they have a signature flavor that's different from the stereotypical Korean Chicken -- Kimchi.",
+      "rating": 4.3,
+      "foundHelpful": [],
+      "media": [
+        "https://images.summitmedia-digital.com/spotph/images/2021/09/27/new-korean-fried-chicken-640-1632734843.jpg"
+      ],
+      "createdAt": {
+        "$date": "2024-03-09T15:40:01.413Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-09T15:40:01.413Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "65f30775c4cee850fdc4a511"
+      },
+      "user": {
+        "$oid": "65e833132c64c3efcb86beef"
+      },
+      "title": "First Impression",
+      "content": "Bok chicken has many flavors. However, they have a signature flavor that's different from the stereotypical Korean Chicken -- Kimchi.",
+      "rating": 4.3,
+      "foundHelpful": [],
+      "media": [
+        "https://images.summitmedia-digital.com/cosmo/images/2021/04/25/where-to-buy-korean-fried-chicken-1619351692.jpg"
+      ],
+      "createdAt": {
+        "$date": "2024-03-14T14:19:33.675Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-14T14:19:33.675Z"
+      },
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-03-09T19:01:34.904Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-09T19:01:34.904Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f1c87d2ad7b7a730b5f5de"
+  },
+  "name": "Gang Gang Chicken",
+  "images": [
+    "\\images\\gang-gang-chicken.jpg"
+  ],
+  "location": "Taft Avenue, Manila",
+  "owner": {
+    "$oid": "65e834ab580830ee9b516c57"
+  },
+  "rating": 4.5,
+  "description": "REAL TASTE Fried Chicken",
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "65ec86b9fe51d092253a3f12"
+      },
+      "user": {
+        "$oid": "65e833ffc7b2c99b7605f6ee"
+      },
+      "title": "Dine-in Experience",
+      "content": "passed the gamer vibe check.",
+      "rating": 4.5,
+      "foundHelpful": [],
+      "media": [
+        "https://1.bp.blogspot.com/-9O9Pqa30278/X05wWBMXQkI/AAAAAAABjEc/K-q-gBi2y5Yt-C4sBxjn_xXt3Gd_8iragCLcBGAsYHQ/s640/DSCF4299.JPG"
+      ],
+      "createdAt": {
+        "$date": "2024-03-09T15:56:41.454Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-09T15:56:41.454Z"
+      },
+      "__v": 0
+    },
+    {
+      "_id": {
+        "$oid": "65f305b9f247d7e8daa14d6a"
+      },
+      "user": {
+        "$oid": "65e83377287d63e7f98c8cbe"
+      },
+      "title": "Interesting Flavors!!!",
+      "content": "Every Lasallian's quick grab after class. 24 chicken is fast, cheap, and delicious. 10/10 kimchi  ",
+      "rating": 4.5,
+      "foundHelpful": [],
+      "media": [
+        "https://media.pickaroo.com/media/thumb/merchant_landscape_images/2021/5/18/gcVijk79c3pw87UDc85qLh_size_600x300.jpg"
+      ],
+      "createdAt": {
+        "$date": "2024-03-14T14:12:09.397Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-14T14:12:09.397Z"
+      },
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-03-13T15:38:37.366Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-13T15:38:37.366Z"
+  },
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "65f1d14f511ad1395efafd02"
+  },
+  "name": "24 Chicken",
+  "images": [
+    "\\images\\24-chicken.jpg"
+  ],
+  "location": "Taft Avenue, Manila",
+  "owner": {
+    "$oid": "65e834ab580830ee9b516c57"
+  },
+  "rating": 4.1,
+  "description": "Serving happiness at a budget friendly price since 2017. Selling delicious Korean Fried Chicken is not our only goal. Being part of our customers’ lives and communities is what we aim for. Now serving at E.G.I. Taft and Leon Guinto in Taft Avenue!",
+  "reviews": [
+    {
+      "_id": {
+        "$oid": "65f1d46a4a8aa82d687f9ee9"
+      },
+      "user": {
+        "$oid": "65e83377287d63e7f98c8cbe"
+      },
+      "title": "Various Flavors!!!",
+      "content": "There are several flavors to try and worth to come again some time.",
+      "rating": 4.6,
+      "foundHelpful": [],
+      "media": [
+        "https://www.arapatria.com/wp-content/uploads/2019/08/chicken-flavor-1024x768.jpeg"
+      ],
+      "createdAt": {
+        "$date": "2024-03-13T16:29:30.583Z"
+      },
+      "updatedAt": {
+        "$date": "2024-03-13T16:29:30.583Z"
+      },
+      "__v": 0
+    }
+  ],
+  "createdAt": {
+    "$date": "2024-03-13T16:16:15.858Z"
+  },
+  "updatedAt": {
+    "$date": "2024-03-13T16:16:15.858Z"
+  },
+  "__v": 0
+}]
