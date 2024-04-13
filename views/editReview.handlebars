@@ -1,0 +1,25 @@
+<div class="reviewbody">
+<div class="homerow">
+    <p><a href="#">Home</a></p>
+    <p><a href="#">About</a></p>
+    <p><a href="#">TheReviews</a></p>
+    <p><a href="#">FAQs</a></p>
+</div>
+    <div class = "review-content">
+        <form action="/login" method="post" id="login-form">
+
+                <p id="restau-name"><a href="/viewRestaurant/{{restoid}}/{{#if ../loggedIn}}logged/{{../user_id}}{{/if}}">{{restoname}}</a></p>
+                <h1>{{title}}</h1>
+
+                <input class = "edit-review" type="rev" placeholder="{{content}}" id="editrev" name="editrev" required>
+
+                <input class = "edit-rating" type="rat" placeholder="{{rating}}" id="editrat" name="editrat" required>
+
+
+                <div class="input-image">
+                <p> Do you have other images you want to attach? </p>
+                <button class = revimg> Attach here </button>
+
+        </form> 
+    </div>
+</div>

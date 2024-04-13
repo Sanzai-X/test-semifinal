@@ -10,7 +10,13 @@
         <p id="vpAbout">About</p>
     </div>
 </div>
-<div class="profilecontent" style="height: {{dynamicHeight}}px"">
+
+    <div class = editProfile>
+      <a href="/editprofile/{{user_id}}"><p>Edit your profile</p></a>
+    </div>
+
+
+<div class="profilecontent" style="height: {{dynamicHeight}}px">
 {{#if blogs.length}}
     {{#each blogs}}
         <div class="vpblog">

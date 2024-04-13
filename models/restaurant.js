@@ -97,6 +97,7 @@ exports.getUserReviews = async function(id){
 			{$match: {'reviews.user': new mongoose.Types.ObjectId(id)}},
 			{$project: {
 				_id: '$_id',
+				_reviewID: "$reviews._id",
 				restaurantName: '$name',
 				title: '$reviews.title',
 				content: '$reviews.content',
@@ -115,10 +116,27 @@ exports.getUserReviews = async function(id){
 
 exports.find = async function(searchQuery){
 	try{
-		const searchQueries = await restoModel.find({name: searchQuery});
+		const searchQueries = await restoModel.findOne({name: searchQuery});
 		return searchQueries;
 	}
 	catch(err){
 		console.error(err);
 	}
+}
+
+exports.findReview = async function(id){
+	const restaurants = await restoModel.find({ "reviews._id": id }).populate({
+		path: "reviews.user",
+		model: "User"
+	});;
+        // Iterate over each restaurant to find the review
+        for (const restaurant of restaurants) {
+            const review = restaurant.reviews.find(review => review._id.toString() === id);
+            if (review) {
+                return review;
+            }
+        }
+
+        // If the review is not found in any restaurant
+        throw new Error('Review not found');
 }
